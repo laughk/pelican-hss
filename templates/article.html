@@ -18,7 +18,7 @@
     {% endif %}
       {% if article.tags %} Tags:
       {% for tag in article.tags %}
-      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% if not loop.last %},{% endif %}
       {% endfor %}
       {% endif %}
     </p>
