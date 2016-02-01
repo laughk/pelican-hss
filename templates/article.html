@@ -11,18 +11,20 @@
   <div class="article_title">
     <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   </div>
-  <div class="article_text">
-    {{ article.content }}
-  </div>
   <div class="article_meta">
-    <p>Posted on: {{ article.locale_date }}</p>
-    <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-      {% if article.tags %} &ndash; Tags:
+    <p class="article_meta_post_date">Posted on: {{ article.locale_date }}</p>
+    {% if DISPLAY_CATEGORIES == '' or DISPLAY_CATEGORIES %}
+    <p class="article_meta_category">Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+    {% endif %}
+      {% if article.tags %} Tags:
       {% for tag in article.tags %}
-      <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>{% if not loop.last %},{% endif %}
       {% endfor %}
       {% endif %}
     </p>
+  </div>
+  <div class="article_text">
+    {{ article.content }}
   </div>
   {% include "modules/sosial_tools.html" %}
   {% include "modules/google-adsense.html" %}
