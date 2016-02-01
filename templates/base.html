@@ -67,17 +67,15 @@
   </main>
     <footer>
       <div class="author_logo">
-        <a href="{{ SITEURL }}/pages/about.html">
           {% if USER_LOGO_URL %}
           <img src="{{ USER_LOGO_URL }}" alt="logo">
           {% else %}
           <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
           {% endif %}
-        </a>
       </div>
       <section class="user_meta">
         <div class="author_name">
-          <a href="{{ SITEURL }}">{{ AUTHOR }}</a>
+          <a href="{{ SITEURL }}/pages/about.html">{{ AUTHOR }}</a>
           <p>{{ TAGLINE }}</p>
         </div>
         <div class="author_link">
