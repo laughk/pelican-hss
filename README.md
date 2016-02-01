@@ -2,9 +2,13 @@
 
 responsive theme for [Pelican](http://getpelican.com), it is my hack of a [gfidente/pelican-svbhack](https://github.com/gfidente/pelican-svbhack) theme.
 
-## Screenshot
+## Screenshot&Demo
 
-![theme screenshot](screenshot.png)
+You can see the [my site](http://memo.laughk.org).
+
+![screenshot_2016-02-02_00-18-54](https://cloud.githubusercontent.com/assets/1286319/12721360/cb4fd51c-c942-11e5-89e1-25fb8ac60a04.jpg)
+
+![screenshot_2016-02-02_00-19-40](https://cloud.githubusercontent.com/assets/1286319/12721364/d0079c8e-c942-11e5-9e9a-464d3a6f2c9f.jpg)
 
 ## INSTALL
 
@@ -12,19 +16,7 @@ Clone the [repository](https://github.com/laughk/pelican-svbhack), edit your `pe
 
 ## PELICANCONF.PY
 
-Supports a number of common global variables but patches are welcomed if you need better support.
-
-- `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
-
-- `USER_LOGO_URL` to replace the logo placeholder, put your logo in content/images/your_logo.png and make this var point to `SITEURL + '/static/images/your_logo.png'`
-
-- `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
-
-- `TAGLINE` some text rendered right below the logo
-
-and so on. (sorry coming soon)
-
-When developing locally, you may want to set the following variable: `SITEURL = http://localhost:8000`
+TBD
 
 ## MODIFICATIONS
 
