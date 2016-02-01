@@ -179,7 +179,7 @@ footer section.user_meta .author_link {
   margin-left: 0;
   margin-right: 0.7em;
 }
-footer div#ending_message {
+footer div.ending_message {
   border-top: #eeeeee 1px solid;
   padding: 0 40px 0 40px;
   color: #999999;
