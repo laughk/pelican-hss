@@ -130,6 +130,10 @@ main article div.article_meta {
   font-size: 12px;
   color: #999999;
 }
+main article div.article_meta p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 footer {
   border-top: #eeeeee 1px solid;
   width: 100%;
@@ -211,6 +215,15 @@ footer div#ending_message {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+  }
+  main article div.article_meta {
+    display: flex;
+  }
+  main article div.article_meta p {
+    margin-right: 1em;
+  }
+  main article div.article_meta p div.article_meta_post_date {
+    width: 20em;
   }
   main header {
     border-top: 0;
