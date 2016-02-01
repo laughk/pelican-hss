@@ -11,9 +11,6 @@
   <div class="article_title">
     <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
   </div>
-  <div class="article_text">
-    {{ article.content }}
-  </div>
   <div class="article_meta">
     <p>Posted on: {{ article.locale_date }}</p>
     <p>Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
@@ -23,6 +20,9 @@
       {% endfor %}
       {% endif %}
     </p>
+  </div>
+  <div class="article_text">
+    {{ article.content }}
   </div>
   {% include "modules/sosial_tools.html" %}
   {% include "modules/google-adsense.html" %}
