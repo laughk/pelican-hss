@@ -6,9 +6,9 @@ responsive theme for [Pelican](http://getpelican.com), it is my hack of a [gfide
 
 You can see the [my site](http://memo.laughk.org).
 
-![screenshot_2016-02-02_00-18-54](https://cloud.githubusercontent.com/assets/1286319/12721360/cb4fd51c-c942-11e5-89e1-25fb8ac60a04.jpg)
+![screenshot_2016-02-02_22-40-31](https://cloud.githubusercontent.com/assets/1286319/12751084/68fcc55c-c9fe-11e5-88eb-e71be612f21f.jpg)
 
-![screenshot_2016-02-02_00-19-40](https://cloud.githubusercontent.com/assets/1286319/12721364/d0079c8e-c942-11e5-9e9a-464d3a6f2c9f.jpg)
+![screenshot_2016-02-02_22-40-59](https://cloud.githubusercontent.com/assets/1286319/12751085/6d012634-c9fe-11e5-8a63-974f7eb4350c.jpg)
 
 ## INSTALL
 
