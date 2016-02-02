@@ -20,7 +20,6 @@ TBD
 
 ## MODIFICATIONS
 
-- Accent color can be changed by editing `@accent` in `./static/css/style.less`.
 - A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
 
 ## AUTHOR
