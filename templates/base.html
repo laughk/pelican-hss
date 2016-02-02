@@ -49,8 +49,7 @@
       {% endif %}
       {% if FEED_ALL_ATOM %}
       &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom</a>
-      {% endif %}
-      {% if FEED_ALL_RSS %}
+      {% elif FEED_ALL_RSS %}
       &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
       {% endif %}
       {% block header %}
