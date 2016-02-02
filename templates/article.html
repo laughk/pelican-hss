@@ -26,7 +26,9 @@
   <div class="article_text">
     {{ article.content }}
   </div>
-  {% include "modules/sosial_tools.html" %}
+  {% if SHOW_SOCIAL_SHARE_BUTTON %}
+    {% include "modules/sosial_tools.html" %}
+  {% endif %}
   {% include "modules/google-adsense.html" %}
   {% if DISQUS_SITENAME %}
   <div id="article_comments">
