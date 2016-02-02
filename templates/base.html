@@ -42,17 +42,15 @@
         <a href="{{ SITEURL }}">{{ SITENAME }}</a>
       </div>
       <p>
-      <a href="{{ SITEURL }}">Index</a> &brvbar;
       {% if ARCHIVES_URL %}
-        <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a>
+        <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}"><i class="fa fa-archive"></i> Archive</a>
       {% else %}
-        <a href="{{ SITEURL }}/archives.html">Archives</a>
+        <a href="{{ SITEURL }}/archives.html"><i class="fa fa-archive"></i> Arcive</a>
       {% endif %}
       {% if FEED_ALL_ATOM %}
-      &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">Atom</a>
-      {% endif %}
-      {% if FEED_ALL_RSS %}
-      &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">RSS</a>
+      &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"><i class="fa fa-rss"></i> Atom</a>
+      {% elif FEED_ALL_RSS %}
+      &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"><i class="fa fa-rss"></i> Rss</a>
       {% endif %}
       {% block header %}
       {% endblock header %}
