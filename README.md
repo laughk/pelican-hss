@@ -27,6 +27,8 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
 - `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
 - `TAGLINE` some text rendered right below the logo
 - `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
+- `SHOW_SOCIAL_SHARE_BUTTON` to use social share button. set this var to `True`, show [twitter](https://about.twitter.com/ja/resources/buttons), [facebook like](https://developers.facebook.com/docs/plugins/like-button), [pocket button](https://getpocket.com/publisher/button) and [hatena bookmark](http://b.hatena.ne.jp/guide/bbutton).    
+  - if use facebook bottun, set "app id" to `FACEBOOK_APPID` from https://developers.facebook.com/apps.
 
 and so on...
 
