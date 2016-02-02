@@ -13,7 +13,7 @@ You can see the [my site](http://memo.laughk.org).
 
 ## INSTALL
 
-Clone the [repository](https://github.com/laughk/pelican-svbhack), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
+Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
 
 ## PELICANCONF.PY
 
