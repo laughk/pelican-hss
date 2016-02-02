@@ -25,7 +25,9 @@ TBD
 
 ## AUTHOR
 
-Kei Iwasaki.
+* Kei Iwasaki.
+* [pelican-svbhack](https://github.com/gfidente/pelican-svbhack) is authored by Giulio Fidente.
+
 
 ## LICENSE
 
