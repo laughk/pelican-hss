@@ -1,7 +1,7 @@
 # HSS
 
 * HSS is responsive and single page design theme for [Pelican](http://getpelican.com), it is my hack of a Giulio Fidente's [gfidente/pelican-svbhack](https://github.com/gfidente/pelican-svbhack) theme.
-* HSS is "__H__ack to __S__ingle-page-layout of __S__VBHACK".
+* HSS is "H"ack to "S"ingle-page-layout of "S"VBHACK.
 
 ## Screenshot&Demo
 
