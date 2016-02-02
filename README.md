@@ -1,6 +1,7 @@
-# SVBHACK (forked version by @laughk)
+# HSS
 
-responsive theme for [Pelican](http://getpelican.com), it is my hack of a [gfidente/pelican-svbhack](https://github.com/gfidente/pelican-svbhack) theme.
+* HSS is responsive and single page design theme for [Pelican](http://getpelican.com), it is my hack of a Giulio Fidente's [gfidente/pelican-svbhack](https://github.com/gfidente/pelican-svbhack) theme.
+* HSS is "__H__ack to __S__ingle-page-layout of __S__VBHACK".
 
 ## Screenshot&Demo
 
@@ -24,7 +25,7 @@ TBD
 
 ## AUTHOR
 
-* Kei Iwasaki.
+* [HSS](https://github.com/laughk/pelican-hss) is authored by Kei Iwasaki.
 * [pelican-svbhack](https://github.com/gfidente/pelican-svbhack) is authored by Giulio Fidente.
 
 
