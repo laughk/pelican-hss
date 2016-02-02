@@ -7,7 +7,7 @@ body {
   font-size: 17px;
 }
 header .site_name {
-  font-size: 40px;
+  font-size: 28px;
   font-weight: bold;
 }
 a {
@@ -86,6 +86,9 @@ main article {
   max-width: 100%;
   padding: 40px 20px;
 }
+main article div.article_title h1 {
+  margin-bottom: 8px;
+}
 main article div.article_text {
   line-height: 1.375em;
 }
@@ -129,6 +132,7 @@ main article div.gist {
 main article div.article_meta {
   font-size: 12px;
   color: #999999;
+  margin-bottom: 2rem;
 }
 main article div.article_meta p {
   margin-top: 0;
