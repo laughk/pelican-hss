@@ -17,7 +17,18 @@ Clone the [repository](https://github.com/laughk/pelican-svbhack), edit your `pe
 
 ## PELICANCONF.PY
 
-TBD
+(TBD)
+
+- `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
+- The following values ​​are intended for use Google Adsens(only responsive).
+  - `GOOGLE_ADSENSE_CLIENT`: `ca-pub-XXXXXXXXX` at `data-ad-client`.
+  - `GOOGLE_ADSENSE_SLOT`: value at `data-ad-slot`
+- `USER_LOGO_URL` to replace the logo placeholder, put your logo in content/images/your_logo.png and make this var point to `SITEURL + '/static/images/your_logo.png'`
+- `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
+- `TAGLINE` some text rendered right below the logo
+- `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
+
+and so on...
 
 ## MODIFICATIONS
 
