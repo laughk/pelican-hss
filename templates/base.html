@@ -90,6 +90,10 @@
             <li><a href="{{ link }}" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
             {% elif name == 'github' %}
             <li><a href="{{ link }}" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            {% elif name == 'facebook' %}
+            <li><a href="{{ link }}" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+            {% elif name == 'googleplus' or name == 'google+' }
+            <li><a href="{{ link }}" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
             {% endif %}
             {% endfor %}
           </ul>
