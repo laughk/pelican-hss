@@ -90,15 +90,19 @@
             <li><a href="{{ link }}" title="{{ name }}"><i class="fa fa-link"></i></a></li>
             {% endfor %}
             {% for name, link in SOCIAL %}
-            {% if name == 'twitter' %}
-            <li><a href="{{ link }}" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-            {% elif name == 'github' %}
-            <li><a href="{{ link }}" target="_blank"><i class="fa fa-github-square"></i></a></li>
-            {% elif name == 'facebook' %}
-            <li><a href="{{ link }}" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-            {% elif name == 'googleplus' or name == 'google+' %}
-            <li><a href="{{ link }}" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
-            {% endif %}
+            <li>
+              <a href="{{ link }}" target="_blank">
+              {% if name == 'twitter' %}
+                <i class="fa fa-twitter-square"></i>
+              {% elif name == 'github' %}
+                <i class="fa fa-github-square"></i>
+              {% elif name == 'facebook' %}
+                <i class="fa fa-facebook-square"></i>
+              {% elif name == 'googleplus' or name == 'google+' %}
+                <i class="fa fa-google-plus-square">
+              {% endif %}
+              </a>
+            </li>
             {% endfor %}
           </ul>
         </div>
