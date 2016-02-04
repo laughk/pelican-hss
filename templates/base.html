@@ -83,11 +83,11 @@
             {% if p.title == 'About Me' %}
             <li><a href="{{ SITEURL }}/{{ p.url }}" title="About Me"><i class="fa fa-user"></i></a></li>
             {% else %}
-            <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+            <li><a href="{{ SITEURL }}/{{ p.url }}" title="{{ p.title }}"><i class="fa fa-link"></i></a></li>
             {% endif %}
             {% endfor %}{% endif %}
             {% for name, link in LINKS %}
-            <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+            <li><a href="{{ link }}" title="{{ name }}"><i class="fa fa-link"></i></a></li>
             {% endfor %}
             {% for name, link in SOCIAL %}
             {% if name == 'twitter' %}
