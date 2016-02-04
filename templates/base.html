@@ -91,7 +91,7 @@
             {% endfor %}
             {% for name, link in SOCIAL %}
             <li>
-              <a href="{{ link }}" target="_blank">
+              <a href="{{ link }}" target="_blank" title="{{ name }}">
               {% if name == 'twitter' %}
                 <i class="fa fa-twitter-square"></i>
               {% elif name == 'github' %}
