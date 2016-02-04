@@ -80,7 +80,11 @@
         <div class="author_link">
           <ul>
             {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
+            {% if p.title == 'About Me' %}
+            <li><a href="{{ SITEURL }}/{{ p.url }}" title="About Me"><i class="fa fa-user"></i></a></li>
+            {% else %}
             <li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+            {% endif %}
             {% endfor %}{% endif %}
             {% for name, link in LINKS %}
             <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
