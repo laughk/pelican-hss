@@ -189,9 +189,26 @@ footer div.ending_message {
   color: #999999;
   font-size: 10px;
 }
-.sosial_tools {
+.social_tools {
+  display: block;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
+}
+.social_tools_title {
+  font-size: 18px;
+  font-style: italic;
+  display: block;
+  margin: 5px 0;
+  border-bottom: 0.5px #eeeeee solid;
+}
+.social_buttons {
+  font-size: 25px;
+}
+.social_buttons a {
+  color: #999999;
+}
+.social_buttons a:hover {
+  color: #000000;
 }
 .adsense {
   margin-top: 2em;
