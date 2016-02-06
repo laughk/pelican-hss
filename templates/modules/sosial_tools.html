@@ -10,9 +10,9 @@
       {# Hatena Bookmark END #}
       {# Facebook Like Button #}
       {% elif social_service == 'facebook' %}
-        {% if FACEBOOK_APPID %}
-          <div class="fb-like" data-href="{{ SITEURL }}/{{ article.url }}" data-width="110px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
-        {% endif %}
+        <a class="facebook-share-button" href="https://www.facebook.com/sharer/sharer.php?u={{ SITEURL }}/{{ article.url }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" >
+          <i class="fa fa-facebook"></i>
+        </a>
       {# Facebook Like Button END #}
       {# Tweet Button #}
       {% elif social_service == 'twitter' %}
