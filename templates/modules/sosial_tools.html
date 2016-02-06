@@ -1,5 +1,11 @@
 <section class="social_tools">
 
+    {% if SOCIAL_SHARE_BUTTONS %}
+    <div class="social_tools_title">
+      Share this post.
+    </div>
+
+    <div class="social_bottons">
     {% for social_service in SOCIAL_SHARE_BUTTONS %}
       {% if social_service == 'hatebu' %}
       {# Hatena Bookmark #}
@@ -52,6 +58,8 @@
       {% endif %}
       {# Pocket Button END #}
     {% endfor %}
+    </div>
+    {% endif %}
 
 
 </section>
