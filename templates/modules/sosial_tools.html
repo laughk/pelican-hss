@@ -3,9 +3,10 @@
     {% for social_service in SOCIAL_SHARE_BUTTONS %}
       {% if social_service == 'hatebu' %}
       {# Hatena Bookmark #}
-      <a href="http://b.hatena.ne.jp/entry/{{ SITEURL }}/{{ article.url }}" class="hatena-bookmark-button" data-hatena-bookmark-title="{{ SITENAME }}" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加">
-        <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" />
+      <a href="http://b.hatena.ne.jp/entry/{{ SITEURL }}/{{ article.url }}" class="hatebu-share-button hatena-bookmark-button" data-hatena-bookmark-title="{{ SITENAME }}" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加">
+        <i class="fa fa-hatebu"></i>
       </a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
       {# Hatena Bookmark END #}
       {# Facebook Like Button #}
       {% elif social_service == 'facebook' %}
