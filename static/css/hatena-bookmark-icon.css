@@ -1,0 +1,18 @@
+.fa-hatebu:before {
+  content: 'B!';
+  font-family: verdana ;
+  font-weight: bold;
+}
+
+.fa-hatebu-square:before
+{
+  content: 'B!';
+  font-family: verdana ;
+  font-weight: bold;
+  vertical-align: 2.5px;
+  padding: 1.0px 1.5px;
+  font-size: 20px;
+  border-radius: 10%;
+  color: #ffffff;
+  background: #000000;
+}

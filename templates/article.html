@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block head %}
 <meta name="keywords" content="{{ article.tags|join(', ')  }}">
-{% include "modules/facebook-sdk-import.html" %}
 {% endblock %}
 
 {% block title %}&ndash; {{ article.title }}{% endblock %}
