@@ -16,47 +16,21 @@
       {# Facebook Like Button END #}
       {# Tweet Button #}
       {% elif social_service == 'twitter' %}
-      <a href="https://twitter.com/share" class="twitter-share-button addthis_button_tweet" data-lang="ja" {%- if TWITTER_ID -%}data-related="{{ TWITTER_ID }}"{%- endif -%}>Tweet</a>
-      <script>
-          !function(d,s,id){
-            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-              if(!d.getElementById(id)){
-                js=d.createElement(s);
-                  js.id=id;
-                  js.src=p+'://platform.twitter.com/widgets.js';
-                  fjs.parentNode.insertBefore(js,fjs);
-              }
-          }(document, 'script', 'twitter-wjs');
-       </script>
+      <a class="twitter-share-button" href="http://twitter.com/share?text={{ SITENAME }} - {{ article.title }} | {{ SITEURL }}/{{ article.url }}" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470'); return false;" >
+        <i class="fa fa-twitter"></i>
+      </a>
       {# Tweet Button END #}
       {# Google+ Button #}
       {% elif social_service == 'googleplus' %}
-          {# +1 ボタン を表示したい位置に次のタグを貼り付けてください。#}
-          <div class="g-plusone "></div>
+      <a class="google-plus-share-button" href="https://plus.google.com/share?url={{ SITEURL }}/{{ article.url }}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-google-plus"></i>
+      </a>
 
-          {# 最後の +1 ボタン タグの後に次のタグを貼り付けてください。#}
-          <script type="text/javascript">
-            window.___gcfg = {lang: 'ja'};
-            (function() {
-              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-              po.src = 'https://apis.google.com/js/plusone.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-            })();
-          </script>
-      {# Google+ Button END #}
       {# Pocket Button #}
       {% elif social_service == 'pocket' %}
-          <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="ja"></a>
-          <script type="text/javascript">
-              !function(d,i){
-                if(!d.getElementById(i)){
-                  var j=d.createElement("script");
-                  j.id=i;
-                  j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";
-                  var w=d.getElementById(i);d.body.appendChild(j);
-                }
-              }(document,"pocket-btn-js");
-          </script>
+      <a class="pocket-add-button" href="http://getpocket.com/edit?url={{ SITEURL }}/{{ article.url }}&title={{ article.title }}" onclick="window.open(this.href, 'add-to-get-pocket', 'width=490,height=530');return false;" title="add to pocket">
+        <i class="fa fa-get-pocket"></i>
+      </a>
       {% endif %}
       {# Pocket Button END #}
     {% endfor %}
