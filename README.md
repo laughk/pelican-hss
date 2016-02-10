@@ -5,7 +5,7 @@
 
 ## Screenshot&Demo
 
-You can see the [my site](http://memo.laughk.org).
+You can see the [my site](https://memo.laughk.org).
 
 ![screenshot_2016-02-02_22-40-31](https://cloud.githubusercontent.com/assets/1286319/12751084/68fcc55c-c9fe-11e5-88eb-e71be612f21f.jpg)
 
