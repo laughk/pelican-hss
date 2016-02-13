@@ -1,12 +1,8 @@
-@red:  #ff0000;
 @black:  #000000;
 @white:  #ffffff;
 @light-grey:  #eeeeee;
 @med-grey:  #999999;
 @dark-grey:  #4d4d4d;
-@blue:  #0e94ec;
-@deep-orage: #ff5722;
-@accent:  @blue;
 @sans: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 @serif: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
 @mono: 'Source Code Pro', monospace;
@@ -98,6 +94,87 @@ iframe {
         border-radius: 5px;
 
       }
+    }
+  }
+}
+
+.social_tools {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.social_tools_title {
+  font-size: 18px;
+  font-style: italic;
+  margin: 5px 0;
+  display: block;
+  margin: 5px 0;
+  border-bottom: 0.5px @light-grey solid;
+}
+
+.social_buttons {
+  font-size: 25px;
+  a {
+    color: @med-grey;
+    margin: 0.4rem;
+  }
+  a:hover {
+    color: #000000;
+  }
+}
+
+.adsense {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+@media screen and (min-width: 640px) {
+  main {
+    width: 100%;
+    top: 0;
+    left: 25%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    article {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+
+      div.article_meta {
+        display: flex;
+        p {
+          margin-right: 1em;
+          div.article_meta_post_date {
+            width: 20em
+          }
+        }
+      }
+    }
+
+    header {
+      border-top: 0;
+    }
+  }
+
+  footer {
+    section.user_meta {
+      div.autohr_name {
+        margin-left: auto;
+      }
+      div.author_link {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px){
+  article {
+    img {
+      height : auto;
+      width  : 100%;
     }
   }
 }
@@ -210,7 +287,6 @@ footer {
   }
 
   section.user_meta {
-    display: flex;
     max-width: 600px;
     margin: 1.5em auto;
 
@@ -229,8 +305,8 @@ footer {
       font-style: italic;
       max-width: 420px;
       width: 70%;
-      margin-left: 0.7em;
-      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
       p {
         font-size: 13px;
       }
@@ -239,9 +315,13 @@ footer {
     .author_link {
       text-align: left;
       max-width: 180px;
-      width: 30%;
-      margin-left: 0;
-      margin-right: 0.7em;
+      margin-left: auto;
+      margin-right: auto;
+      ul {
+        padding-left: 0;
+        text-align: center;
+      }
+
     }
   }
 
@@ -250,85 +330,5 @@ footer {
     padding: 0 40px 0 40px;
     color: @med-grey;
     font-size: 10px;
-  }
-}
-
-.social_tools {
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-}
-
-.social_tools_title {
-  font-size: 18px;
-  font-style: italic;
-  margin: 5px 0;
-  display: block;
-  margin: 5px 0;
-  border-bottom: 0.5px @light-grey solid;
-}
-
-.social_buttons {
-  font-size: 25px;
-  a {
-    color: @med-grey;
-  }
-  a:hover {
-    color: #000000;
-  }
-}
-
-.adsense {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-
-@media screen and (min-width: 640px) {
-  main {
-    width: 100%;
-    top: 0;
-    left: 25%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-    article {
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-
-      div.article_meta {
-        display: flex;
-        p {
-          margin-right: 1em;
-          div.article_meta_post_date {
-            width: 20em
-          }
-        }
-      }
-    }
-
-    header {
-      border-top: 0;
-    }
-  }
-
-  footer {
-    section.user_meta {
-      div.autohr_name {
-        margin-left: auto;
-      }
-      div.author_link {
-        margin-right: auto;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 769px){
-  article {
-    img {
-      height : auto;
-      width  : 100%;
-    }
   }
 }
