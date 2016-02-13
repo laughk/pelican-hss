@@ -17,8 +17,6 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
 
 ## PELICANCONF.PY
 
-(TBD)
-
 - `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
 - The following values ​​are intended for use Google Adsens(only responsive).
   - `GOOGLE_ADSENSE_CLIENT`: `ca-pub-XXXXXXXXX` at `data-ad-client`.
@@ -27,10 +25,21 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
 - `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
 - `TAGLINE` some text rendered right below the logo
 - `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
-- `SHOW_SOCIAL_SHARE_BUTTON` to use social share button. set this var to `True`, show [twitter](https://about.twitter.com/ja/resources/buttons), [facebook like](https://developers.facebook.com/docs/plugins/like-button), [pocket button](https://getpocket.com/publisher/button) and [hatena bookmark](http://b.hatena.ne.jp/guide/bbutton).    
-  - if use facebook bottun, set "app id" to `FACEBOOK_APPID` from https://developers.facebook.com/apps.
+- `SHOW_SOCIAL_SHARE_BUTTON` to use social share button.
 
-and so on...
+  from the following.
+    - `twitter`: [twitter](https://about.twitter.com/ja/resources/buttons)
+    - `facebook`: [facebook share link](https://developers.facebook.com/docs/sharing/web)
+    -  `pocket`: [pocket button](https://getpocket.com/publisher/button)
+    -  `hatebu`: [hatena bookmark](http://b.hatena.ne.jp/guide/bbutton)
+    - `googleplus`: [google plus share button](https://developers.google.com/+/web/share/)
+
+    ex.
+    ```python
+    SOCIAL_SHARE_BUTTONS = (
+        'twitter', 'facebook', 'hatebu', 'pocket', 'googleplus'
+    )
+    ```
 
 ## MODIFICATIONS
 
