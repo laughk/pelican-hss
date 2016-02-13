@@ -7,17 +7,15 @@
 
 You can see the [my site](https://memo.laughk.org).
 
-![screenshot_2016-02-02_22-40-31](https://cloud.githubusercontent.com/assets/1286319/12751084/68fcc55c-c9fe-11e5-88eb-e71be612f21f.jpg)
+![screenshot from 2016-02-13 16-57-13](https://cloud.githubusercontent.com/assets/1286319/13026648/f993bef0-d272-11e5-990b-0fe08910e42b.png)
 
-![screenshot_2016-02-02_22-40-59](https://cloud.githubusercontent.com/assets/1286319/12751085/6d012634-c9fe-11e5-8a63-974f7eb4350c.jpg)
+![screenshot from 2016-02-13 16-57-46](https://cloud.githubusercontent.com/assets/1286319/13026649/fcd79690-d272-11e5-9a33-6ba4bfaab653.png)
 
 ## INSTALL
 
 Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
 
 ## PELICANCONF.PY
-
-(TBD)
 
 - `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
 - The following values ​​are intended for use Google Adsens(only responsive).
@@ -27,10 +25,21 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
 - `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
 - `TAGLINE` some text rendered right below the logo
 - `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
-- `SHOW_SOCIAL_SHARE_BUTTON` to use social share button. set this var to `True`, show [twitter](https://about.twitter.com/ja/resources/buttons), [facebook like](https://developers.facebook.com/docs/plugins/like-button), [pocket button](https://getpocket.com/publisher/button) and [hatena bookmark](http://b.hatena.ne.jp/guide/bbutton).    
-  - if use facebook bottun, set "app id" to `FACEBOOK_APPID` from https://developers.facebook.com/apps.
+- `SHOW_SOCIAL_SHARE_BUTTON` to use social share button.
 
-and so on...
+  from the following.
+    - `twitter`: [twitter](https://about.twitter.com/ja/resources/buttons)
+    - `facebook`: [facebook share link](https://developers.facebook.com/docs/sharing/web)
+    -  `pocket`: [pocket button](https://getpocket.com/publisher/button)
+    -  `hatebu`: [hatena bookmark](http://b.hatena.ne.jp/guide/bbutton)
+    - `googleplus`: [google plus share button](https://developers.google.com/+/web/share/)
+
+    ex.
+    ```python
+    SOCIAL_SHARE_BUTTONS = (
+        'twitter', 'facebook', 'hatebu', 'pocket', 'googleplus'
+    )
+    ```
 
 ## MODIFICATIONS
 
