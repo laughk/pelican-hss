@@ -231,8 +231,8 @@ footer section.user_meta .author_name {
   font-style: italic;
   max-width: 420px;
   width: 70%;
-  margin-left: 0.7em;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 footer section.user_meta .author_name p {
   font-size: 13px;
