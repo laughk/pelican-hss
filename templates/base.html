@@ -48,11 +48,6 @@
       {% else %}
         <a href="{{ SITEURL }}/archives.html"><i class="fa fa-archive"></i> Arcive</a>
       {% endif %}
-      {% if FEED_ALL_ATOM %}
-      &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}"><i class="fa fa-rss"></i> Atom</a>
-      {% elif FEED_ALL_RSS %}
-      &brvbar; <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"><i class="fa fa-rss"></i> Rss</a>
-      {% endif %}
       {% block header %}
       {% endblock header %}
       </p>
@@ -113,6 +108,19 @@
               </a>
             </li>
             {% endfor %}
+            {% if FEED_ALL_ATOM %}
+            <li>
+              <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" target="_blank" title="Feed">
+                <i class="fa fa-rss"></i>
+              </a>
+            </li>
+            {% elif FEED_ALL_RSS %}
+            <li>
+              <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" target="_blank" title="Feed">
+                <i class="fa fa-rss"></i>
+              </a>
+            </li>
+            {% endif %}
           </ul>
         </div>
       </section>
