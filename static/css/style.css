@@ -83,6 +83,7 @@ iframe .slide_image {
 }
 .social_buttons a {
   color: #999999;
+  margin: 0.4rem;
 }
 .social_buttons a:hover {
   color: #000000;
