@@ -7,9 +7,9 @@
 
 You can see the [my site](https://memo.laughk.org).
 
-![screenshot_2016-02-02_22-40-31](https://cloud.githubusercontent.com/assets/1286319/12751084/68fcc55c-c9fe-11e5-88eb-e71be612f21f.jpg)
+![screenshot from 2016-02-13 16-57-13](https://cloud.githubusercontent.com/assets/1286319/13026648/f993bef0-d272-11e5-990b-0fe08910e42b.png)
 
-![screenshot_2016-02-02_22-40-59](https://cloud.githubusercontent.com/assets/1286319/12751085/6d012634-c9fe-11e5-8a63-974f7eb4350c.jpg)
+![screenshot from 2016-02-13 16-57-46](https://cloud.githubusercontent.com/assets/1286319/13026649/fcd79690-d272-11e5-9a33-6ba4bfaab653.png)
 
 ## INSTALL
 
