@@ -3,13 +3,13 @@
 
 {% block content %}
 <article>
-  <div class="article_title">
+  <div class="article__title">
     <h3><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h3>
   </div>
   <div class="article__text">
     {{ page.content }}
   </div>
-  <div class="article_meta">
+  <div class="article__meta">
     <p>Updated on: {{ page.locale_date }}</p>
   </div>
 </article>
