@@ -64,19 +64,19 @@
 
   </main>
     <footer>
-      <div class="author_logo">
+      <div class="author__logo">
           {% if USER_LOGO_URL %}
           <img src="{{ USER_LOGO_URL }}" alt="logo">
           {% else %}
           <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
           {% endif %}
       </div>
-      <section class="user_meta">
-        <div class="author_name">
+      <section class="author">
+        <div class="author__name">
           <a href="{{ SITEURL }}/pages/about.html">{{ AUTHOR }}</a>
           <p>{{ TAGLINE }}</p>
         </div>
-        <div class="author_link">
+        <div class="author__link">
           <ul>
             {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
             {% if p.title == 'About Me' %}
