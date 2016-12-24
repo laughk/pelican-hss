@@ -56,7 +56,7 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
 
   ex.
 
-  make `custom.css` to `/path/to/your-pelican-project/extra/custom.css`  
+  make `custom.css` to `/path/to/your-pelican-project/content/extra/custom.css`  
   and add to `pelicanconf.py`
 
   ```python
