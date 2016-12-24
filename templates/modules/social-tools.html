@@ -1,11 +1,11 @@
-<section class="social_tools">
+<section class="social-tools">
 
     {% if SOCIAL_SHARE_BUTTONS %}
-    <div class="social_tools_title">
+    <div class="social-tools__title">
       <p>Share this post</p>
     </div>
 
-    <div class="social_buttons">
+    <div class="social-tools__buttons">
     {% for social_service in SOCIAL_SHARE_BUTTONS %}
       {% if social_service == 'hatebu' %}
       {# Hatena Bookmark #}

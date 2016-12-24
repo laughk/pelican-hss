@@ -42,7 +42,7 @@
 <body>
   <main>
     <header>
-      <div class="site_name">
+      <div class="site-name">
         <a href="{{ SITEURL }}">{{ SITENAME }}</a>
       </div>
       <p>
@@ -64,19 +64,19 @@
 
   </main>
     <footer>
-      <div class="author_logo">
+      <div class="author__logo">
           {% if USER_LOGO_URL %}
           <img src="{{ USER_LOGO_URL }}" alt="logo">
           {% else %}
           <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
           {% endif %}
       </div>
-      <section class="user_meta">
-        <div class="author_name">
+      <section class="author">
+        <div class="author__name">
           <a href="{{ SITEURL }}/pages/about.html">{{ AUTHOR }}</a>
           <p>{{ TAGLINE }}</p>
         </div>
-        <div class="author_link">
+        <div class="author__link">
           <ul>
             {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
             {% if p.title == 'About Me' %}
@@ -127,7 +127,7 @@
           </ul>
         </div>
       </section>
-      <div class="ending_message">
+      <div class="ending-message">
         <p>&copy; {{ AUTHOR }}. Powered by <a href="http://getpelican.com" target="_blank">Pelican</a>, Theme is using <a href="https://github.com/laughk/pelican-hss" target="_blank">HSS</a>. {% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>.{% endif %}</p>
       </div>
     </footer>

@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  .site_name {
+  .site-name {
     font-size: 28px;
     font-weight: bold;
   }
@@ -71,7 +71,7 @@ twitterwidget {
     margin-right: auto;
 }
 
-.article_text > iframe {
+.article__text > iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -106,18 +106,18 @@ twitterwidget {
   }
 }
 
-.social_tools {
+.social-tools {
   margin-bottom: 2rem;
 }
 
-.social_tools_title {
+.social-tools__title {
   display: block;
   font-size: 13px;
   color: @med-grey;
   margin-top: 3rem;
 }
 
-.social_buttons {
+.social-tools__buttons {
   font-size: 26px;
   a {
     color: @med-grey;
@@ -151,11 +151,11 @@ iframe.embedly-card {
       margin-left: auto;
       margin-right: auto;
 
-      div.article_meta {
+      .article__meta {
         display: flex;
         p {
           margin-right: 1em;
-          div.article_meta_post_date {
+          .article__meta__post-date {
             width: 20em
           }
         }
@@ -168,11 +168,11 @@ iframe.embedly-card {
   }
 
   footer {
-    section.user_meta {
-      div.autohr_name {
+    section.author {
+      .autohr__name {
         margin-left: auto;
       }
-      div.author_link {
+      .author__link {
         margin-right: auto;
       }
     }
@@ -209,13 +209,13 @@ main {
   article {
     padding: 40px 20px;
 
-    div.article_title {
+    .article__title {
       h1 {
         margin-bottom: 8px;
       }
     }
 
-    div.article_text {
+    .article__text {
       line-height: 1.375em;
       a {
         text-decoration: underline;
@@ -257,11 +257,11 @@ main {
       }
     }
 
-    div.gist {
+    .gist {
       line-height: .875em;
     }
 
-    div.article_meta {
+    .article__meta {
       font-size: 12px;
       color: @med-grey;
       margin-bottom: 2rem;
@@ -278,7 +278,7 @@ footer {
   width: 100%;
   margin: 0 auto;
 
-  .author_logo {
+  .author__logo {
     width: 72px;
     margin-left: auto;
     margin-right: auto;
@@ -291,7 +291,7 @@ footer {
     }
   }
 
-  section.user_meta {
+  section.author {
     max-width: 600px;
     margin: 1.5em auto;
 
@@ -306,7 +306,7 @@ footer {
       font-size: 30px;
     }
 
-    .author_name {
+    .author__name {
       font-style: italic;
       max-width: 420px;
       width: 70%;
@@ -317,7 +317,7 @@ footer {
       }
     }
 
-    .author_link {
+    .author__link {
       text-align: left;
       max-width: 420px;
       margin-left: auto;
@@ -330,7 +330,7 @@ footer {
     }
   }
 
-  div.ending_message {
+  .ending-message {
     border-top: @light-grey 1px solid;
     padding: 0 40px 0 40px;
     color: @med-grey;

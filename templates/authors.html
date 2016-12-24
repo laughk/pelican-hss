@@ -3,7 +3,7 @@
 
 {% block content %}
 <article>
-  <div class="article_text">
+  <div class="article__text">
     <ul>
       {% for author, articles in authors|sort %}
       <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
