@@ -19,6 +19,7 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
 
 - `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
 - The following values are intended for use Google Adsens(only responsive).
+
   - `GOOGLE_ADSENSE_CLIENT`: `ca-pub-XXXXXXXXX` at `data-ad-client`.
   - `GOOGLE_ADSENSE_SLOT`: value at `data-ad-slot`
 
@@ -27,12 +28,14 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
   GOOGLE_ADSENSE_CLIENT = 'ca-pub-xxxxxxxxxxxxxxxx'
   GOOGLE_ADSENSE_SLOT   = 'xxxxxxxxx'
   ```
+
 - `USER_LOGO_URL` to replace the logo placeholder, put your logo in content/images/your_logo.png and make this var point to `SITEURL + '/static/images/your_logo.png'`
 - `DISQUS_SITENAME` set this to your Disqus sitename to enable disqus comments in articles
 - `TAGLINE` some text rendered right below the logo
 - `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
 - `SHOW_SOCIAL_SHARE_BUTTON` to use social share button. set this var to `True`.
 - `SOCIAL_SHARE_BUTTONS` to choice social media for  
+
   from the following.
     - `twitter`: [twitter](https://about.twitter.com/ja/resources/buttons)
     - `facebook`: [facebook share link](https://developers.facebook.com/docs/sharing/web)
@@ -46,6 +49,38 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
   SOCIAL_SHARE_BUTTONS = (
       'twitter', 'facebook', 'hatebu', 'pocket', 'googleplus'
   )
+  ```
+- `CUSTOM_CSS_URL` (Default: `None`)
+
+  if you want to customize to stylesheet, you add css file by your hosting and seting url to this value.
+
+  ex.
+
+  make `custom.css` to `/path/to/your-pelican-project/extra/custom.css`  
+  and add to `pelicanconf.py`
+
+  ```python
+  # set custom.css url.
+  CUSTOM_CSS_URL = '/static/custom.css'
+
+  # add `extra` to STATIC_PATHS.
+  STATIC_PATHS = [ 'extra', 'images', ]
+
+  # set url of custom.css to EXTRA_PATH_METADATA.
+  EXTRA_PATH_METADATA = {
+
+      -- -- snip -- --
+
+      'extra/custom.css': {'path': 'static/custom.css'},
+  }
+  ```
+
+  or you can use your hosting url path.  
+  so use your hosting url, there is no need to set `STATIC_PATHS` , `EXTRA_PATH_METADATA`.
+
+  ```python
+  # set custom.css url.
+  CUSTOM_CSS_URL = 'https://your-hosting.example.com/path/to/custom.css'
   ```
 
 ## MODIFICATIONS
