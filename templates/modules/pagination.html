@@ -27,17 +27,15 @@
             <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}{{ num }}.html">{{ num }}</a>
           </li>
           {% else %}
-          <li>
             {% if num < articles_page.number and not set_before_dots %}
-                .....
+                <li>.....</li>
                 {% set set_before_dots = True %}
             {% elif num > articles_page.number and not set_after_dots %}
-                .....
+                <li>.....</li>
                 {% set set_after_dots = True %}
             {% endif %}
-          </li>
+            </li>
           {% endif %}
-          </li>
         {% endfor %}
 
         <li class="pagination__next">
