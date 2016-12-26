@@ -18,12 +18,16 @@
             {% set class_str = '' %}
           {% endif %}
 
-          <li>
           {% if num == 1 %}
+          <li>
             <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}.html">{{ num }}</a>
+          </li>
           {% elif (num - articles_page.number)|abs <= 3 or num == articles_paginator.num_pages %}
+          <li>
             <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}{{ num }}.html">{{ num }}</a>
+          </li>
           {% else %}
+          <li>
             {% if num < articles_page.number and not set_before_dots %}
                 .....
                 {% set set_before_dots = True %}
@@ -31,6 +35,7 @@
                 .....
                 {% set set_after_dots = True %}
             {% endif %}
+          </li>
           {% endif %}
           </li>
         {% endfor %}
@@ -41,7 +46,7 @@
         {% else %}
             &raquo;
         {% endif %}
-          </li>
+        </li>
     </ul>
 </div>
 {% endif %}
