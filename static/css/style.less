@@ -252,10 +252,22 @@ main {
       }
 
       blockquote {
+        display: block;
         margin: 22px 2px 22px 2px;
-        padding-left: 40px;
-        color: @med-grey;
+        padding: 1em 2em 1em 4em;
+        color: #9E9E9E;
         font-style: italic;
+        position: relative;
+      }
+      blockquote:before {
+        content: '"';
+        font-size: 600%;
+        font-style: bold;
+        line-height: 1em;
+        left: 0;
+        top: 0;
+        position: absolute;
+        color: #9E9E9E;
       }
     }
 
