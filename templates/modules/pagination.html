@@ -1,14 +1,14 @@
 {% if DEFAULT_PAGINATION %}
 <div class="pagination">
     <ul>
+        <li class="pagination__prev">
         {% if articles_page.has_previous() %}
-            <li class="pagination__prev">
             {% set num = articles_page.previous_page_number() %}
-              <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&laquo;</a>
+            <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&laquo;</a>
         {% else %}
-            &laquo;
+            <div class="pagination__prev--none">&laquo;</div>
         {% endif %}
-            </li>
+        </li>
 
         {% for num in range( 1, 1 + articles_paginator.num_pages ) %}
 
@@ -18,30 +18,33 @@
             {% set class_str = '' %}
           {% endif %}
 
-          <li>
           {% if num == 1 %}
+          <li>
             <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}.html">{{ num }}</a>
+          </li>
           {% elif (num - articles_page.number)|abs <= 3 or num == articles_paginator.num_pages %}
+          <li>
             <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}{{ num }}.html">{{ num }}</a>
+          </li>
           {% else %}
             {% if num < articles_page.number and not set_before_dots %}
-                .....
+                <li>.....</li>
                 {% set set_before_dots = True %}
             {% elif num > articles_page.number and not set_after_dots %}
-                .....
+                <li>.....</li>
                 {% set set_after_dots = True %}
             {% endif %}
+            </li>
           {% endif %}
-          </li>
         {% endfor %}
 
-          <li class="pagination__next">
+        <li class="pagination__next">
         {% if articles_page.has_next() %}
             <a href="{{ SITEURL }}/{{ articles_next_page.url }}">&raquo;</a>
         {% else %}
-            &raquo;
+            <div class="pagination__next--none">&raquo;</div>
         {% endif %}
-          </li>
+        </li>
     </ul>
 </div>
 {% endif %}
