@@ -7,9 +7,9 @@
 
 You can see the [my site](https://memo.laughk.org).
 
-![image](screenshot1.jpg)
-
-![image](screenshot2.jpg)
+index                     | content
+--------------------------|---------------------------
+![image](screenshot1.png) | ![image](screenshot2.png)
 
 ## INSTALL
 
