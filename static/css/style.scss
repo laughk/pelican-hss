@@ -1,19 +1,19 @@
-@black:  #000000;
-@white:  #ffffff;
-@light-grey:  #eeeeee;
-@med-grey:  #999999;
-@dark-grey:  #4d4d4d;
-@dark-red: 	#8B0000;
-@sans: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-@serif: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-@mono: 'Roboto Mono', monospace;
+$black:  #000000;
+$white:  #ffffff;
+$light-grey:  #eeeeee;
+$med-grey:  #999999;
+$dark-grey:  #4d4d4d;
+$dark-red: 	#8B0000;
+$sans: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$serif: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+$mono: 'Roboto Mono', monospace;
 
 body {
   margin: 0;
   padding: 0;
-  background-color: @white;
-  color: @dark-grey;
-  font-family: @sans;
+  background-color: $white;
+  color: $dark-grey;
+  font-family: $sans;
   font-size: 14px;
 }
 
@@ -24,7 +24,7 @@ header {
 }
 
 a {
-  color: @black;
+  color: $black;
   text-decoration: none;
   transition: 0.15ms;
 }
@@ -34,16 +34,16 @@ a:hover {
 }
 
 hr {
-  color: @light-grey;
-  background-color: @light-grey;
+  color: $light-grey;
+  background-color: $light-grey;
   height: 1px;
   border: none;
 }
 
-.border-radius (@radius: 5px) {
-  border-radius: @radius;
-  -moz-border-radius: @radius;
-  -webkit-border-radius: @radius;
+@mixin border-radius($radius: 5px){
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
 }
 
 img {
@@ -80,7 +80,7 @@ div.google-slide {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: @black;
+  color: $black;
   font-weight: lighter;
 }
 
@@ -114,7 +114,7 @@ twitterwidget {
       float: left;
       .pagination__page--current {
         background-color: #212121;
-        color: @white;
+        color: $white;
       }
       :hover:not(.active) {
         background-color: #ddd;
@@ -141,14 +141,14 @@ twitterwidget {
 .social-tools__title {
   display: block;
   font-size: 13px;
-  color: @med-grey;
+  color: $med-grey;
   margin-top: 3rem;
 }
 
 .social-tools__buttons {
   font-size: 26px;
   a {
-    color: @med-grey;
+    color: $med-grey;
     margin: 0.4rem;
   }
   a:hover {
@@ -223,8 +223,8 @@ main {
 
   header {
     padding: 40px;
-    border-top: @light-grey 1px solid;
-    border-bottom: @light-grey 1px solid;
+    border-top: $light-grey 1px solid;
+    border-bottom: $light-grey 1px solid;
     text-align: center;
 
     p {
@@ -250,7 +250,7 @@ main {
 
       h1 {
         display: block;
-        border-bottom: @light-grey 1px solid;
+        border-bottom: $light-grey 1px solid;
         padding-bottom: 7px;
         margin-top: 2em;
         margin-bottom: 1.5rem;
@@ -264,16 +264,16 @@ main {
 
       code {
         padding: 0.2em 0;
-        color: @dark-red;
-        font-family: @mono;
-        background: @light-grey;
+        color: $dark-red;
+        font-family: $mono;
+        background: $light-grey;
         border-radius: 3px;
       }
 
       pre {
         margin: 22px 2px 22px 2px;
         padding: 9.5px;
-        font-family: @mono;
+        font-family: $mono;
         line-height: 1.45;
         overflow-x: auto;
         border-style: none;
@@ -316,7 +316,7 @@ main {
 
     .article__meta {
       font-size: 12px;
-      color: @med-grey;
+      color: $med-grey;
       margin-bottom: 2rem;
       p {
         margin-top: 0;
@@ -327,7 +327,7 @@ main {
 }
 
 footer {
-  border-top: @light-grey 1px solid;
+  border-top: $light-grey 1px solid;
   width: 100%;
   margin: 0 auto;
 
@@ -386,9 +386,9 @@ footer {
   }
 
   .ending-message {
-    border-top: @light-grey 1px solid;
+    border-top: $light-grey 1px solid;
     padding: 0 40px 0 40px;
-    color: @med-grey;
+    color: $med-grey;
     font-size: 10px;
   }
 }
