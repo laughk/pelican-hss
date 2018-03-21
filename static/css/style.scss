@@ -202,6 +202,7 @@ iframe.embedly-card {
       }
       .author__link {
         margin-right: auto;
+        font-size: 30px;
       }
     }
   }
@@ -350,9 +351,13 @@ footer {
     margin: 1.5em auto;
 
     ul {
+      margin-top: 15px;
+      margin-bottom: 15px;
       li {
         display: inline;
-        line-height: 3em;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 1.2em;
       }
     }
 
