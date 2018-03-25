@@ -87,17 +87,13 @@ dd {
   margin-left: 0;
 }
 
-/* for embed tweet */
+.article__text iframe,
+.twitter-tweet,
+.hss-center-position
 twitterwidget {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.article__text > iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .pagination {
