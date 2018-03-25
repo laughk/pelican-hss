@@ -255,12 +255,14 @@ main {
         margin-top: 2em;
         margin-bottom: 1.5rem;
         font-size: 1.8em;
+        padding-bottom: 0.5em;
       }
 
       h2 {
         border-bottom: $light-grey 1px ridge;
         margin-top: 2.375rem;
         margin-bottom: 1.375em;
+        padding-bottom: 0.5em;
       }
 
       h3, h4, h5, h6 {
@@ -284,6 +286,10 @@ main {
         overflow-x: auto;
         border-style: none;
         border-radius: 4px;
+      }
+
+      li {
+        margin-bottom: 0.5em;
       }
 
       blockquote {
