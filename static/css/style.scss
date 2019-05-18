@@ -239,7 +239,7 @@ main {
     }
 
     .article__text {
-      line-height: 1.375em;
+      line-height: 2rem;
       a {
         text-decoration: underline;
       }
@@ -255,7 +255,7 @@ main {
       }
 
       h2 {
-        border-bottom: $light-grey 1px ridge;
+        border-bottom: $light-grey 1px solid;
         margin-top: 2.375rem;
         margin-bottom: 1.375em;
         padding-bottom: 0.5em;
