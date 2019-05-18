@@ -39,13 +39,6 @@
         <i class="fab fa-twitter"></i>
       </a>
       {# Tweet Button END #}
-      {# Google+ Button #}
-      {% elif social_service == 'googleplus' %}
-      <a class="google-plus-share-button"
-         href="https://plus.google.com/share?url={{ SITEURL }}/{{ article.url }}"
-         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" >
-        <i class="fab fa-google-plus"></i>
-      </a>
 
       {# Pocket Button #}
       {% elif social_service == 'pocket' %}
