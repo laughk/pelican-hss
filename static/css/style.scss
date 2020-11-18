@@ -266,7 +266,7 @@ main {
       }
 
       code {
-        padding: 0.2em 0;
+        padding: 0.2em 0.5em;
         color: $dark-red;
         font-family: $mono;
         background: $light-grey;
@@ -274,9 +274,10 @@ main {
       }
 
       pre {
-        margin: 22px 2px 22px 2px;
-        padding: 9.5px;
+        margin: 30px -30px 30px -30px;
+        padding: 15px 40px;
         font-family: $mono;
+        font-size: 0.85em;
         line-height: 1.45;
         overflow-x: auto;
         border-style: none;
