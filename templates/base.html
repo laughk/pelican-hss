@@ -6,6 +6,9 @@
   <link rel="stylesheet/less" type="text/css" href="{{ SITEURL }}/theme/css/style.less">
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
   -->
+
+  {% include "modules/gtagjs.html" %}
+
   <link rel="icon" type="image/vnd.microsoft.icon" href="{{ SITEURL }}/{{ FAVICON }}">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.min.css">
@@ -38,7 +41,6 @@
     {% block title %}{% endblock %}
   </title>
 
-  {% include "modules/analytics.html" %}
   {%- if CUSTOM_HEADER_HTML %}
       {{ CUSTOM_HEADER_HTML }}
   {% endif -%}
