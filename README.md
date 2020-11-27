@@ -19,7 +19,7 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
 
 ## PELICANCONF.PY
 
-- `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your UA-XYZ code
+- `GOOGLE_ANALYTICS` to use Google Analytics, set this var to your ID ("UA-..." or "G-...") code
 - The following values are intended for use Google Adsens(only responsive).
 
   - `GOOGLE_ADSENSE_CLIENT`: `ca-pub-XXXXXXXXX` at `data-ad-client`.
