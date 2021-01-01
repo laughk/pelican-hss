@@ -22,6 +22,11 @@
 
 
   <meta charset="utf-8" />
+
+  <meta name="og:url" content="{{ SITEURL }}/{{ page.url }}" />
+  <meta name="og:title" content="{{ page.title }}" />
+  <meta name="og:description" content="{{ page.content|truncate(255, True)}}" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="{{ AUTHOR }}">
   <meta name="description" content="Posts and writings by {{ AUTHOR }}">
