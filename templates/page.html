@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 {% block title %}&ndash; {{ page.title }}{% endblock %}
 
+{% block head %}
+
+  {% if HSS_TWITTER_CARD %}
+  <meta name="twitter:title" content="{{ SITENAME }} &ndash; {{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.summary|striptags }}" />
+  {% endif %}
+  <meta name="og:url" content="{{ SITEURL }}/{{ page.url }}" />
+  <meta name="og:title" content="{{ page.title }}" />
+  <meta name="og:description" content="{{ page.summary|striptags }}" />
+
+{% endblock %}
+
 {% block content %}
 <article>
   <div class="article__title">

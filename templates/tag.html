@@ -1,7 +1,13 @@
 {% extends "index.html" %}
 {% block title %}&ndash; Tag: {{ tag }}{% endblock %}
 
+
 {% block head %}
+
+  {% if HSS_TWITTER_CARD %}
+  <meta name="twitter:title" content="{{ SITENAME }} &ndash; {{ tag }}" />
+  {% endif %}
+
 {% if TAG_FEED_ATOM %}
 <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Tag Atom" />
 {% endif %}

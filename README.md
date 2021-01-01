@@ -83,6 +83,9 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
   # set custom.css url.
   CUSTOM_CSS_URL = 'https://your-hosting.example.com/path/to/custom.css'
   ```
+- `HSS_TWITTER_CARD` to enable twitter card for your site. set this var to `True`.
+  - `HSS_TWITTER_CARD_TWITTER_ID` twitter_id for TWITTER_CARD, if you want. (optional)
+
 
 ## MODIFICATIONS
 
