@@ -1,6 +1,15 @@
 {% extends "base.html" %}
 {% block title %}&ndash; Authors{% endblock %}
 
+{% block head %}
+
+  {% if HSS_TWITTER_CARD %}
+  <meta name="twitter:title" content="{{ SITENAME }} &ndash; Authors" />
+  {% endif %}
+
+{% endblock %}
+
+
 {% block content %}
 <article>
   <div class="article__text">

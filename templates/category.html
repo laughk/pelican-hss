@@ -2,6 +2,11 @@
 {% block title %}&ndash; Category: {{ category }}{% endblock %}
 
 {% block head %}
+
+  {% if HSS_TWITTER_CARD %}
+  <meta name="twitter:title" content="{{ SITENAME }} &ndash; Category" />
+  {% endif %}
+
 {% if CATEGORY_FEED_ATOM %}
 <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(slug=category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ category }} Category Atom" />
 {% endif %}

@@ -1,6 +1,16 @@
 {% extends "base.html" %}
+
 {% block head %}
-<meta name="keywords" content="{{ article.tags|join(', ')  }}">
+
+  {% if HSS_TWITTER_CARD %}
+  <meta name="twitter:title" content="{{ SITENAME }} &ndash; {{ article.title }}" />
+  <meta name="twitter:description" content="{{ article.summary|striptags }}" />
+  {% endif %}
+  <meta name="og:url" content="{{ SITEURL }}/{{ article.url }}" />
+  <meta name="og:title" content="{{ article.title }}" />
+  <meta name="og:description" content="{{ article.summary|striptags }}" />
+  <meta name="keywords" content="{{ article.tags|join(', ')  }}">
+
 {% endblock %}
 
 {% block title %}&ndash; {{ article.title }}{% endblock %}

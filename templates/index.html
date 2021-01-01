@@ -1,4 +1,14 @@
 {% extends "base.html" %}
+
+{% block head %}
+
+  {% if TWITTER_CARD %}
+  <meta name="twitter:title" content="{{ SITENAME }}" />
+  {% endif %}
+
+{% endblock %}
+
+
 {% block content %}
 {% for article in articles_page.object_list %}
 <article>
