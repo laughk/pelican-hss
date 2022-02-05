@@ -11,6 +11,10 @@
   <meta name="og:title" content="{{ page.title }}" />
   <meta name="og:description" content="{{ page.summary|striptags }}" />
 
+  {% if HSS_DEFAULT_OGP_IMAGE_URL %}
+  <meta property="og:image" content="{{ HSS_DEFAULT_OGP_IMAGE_URL }}" />
+  {% endif %}
+
 {% endblock %}
 
 {% block content %}

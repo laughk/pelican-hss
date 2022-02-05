@@ -85,7 +85,26 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
   ```
 - `HSS_TWITTER_CARD` to enable twitter card for your site. set this var to `True`.
   - `HSS_TWITTER_CARD_TWITTER_ID` twitter_id for TWITTER_CARD, if you want. (optional)
+- `HSS_DEFAULT_OGP_IMAGE_URL` for default ogp image of your site by URL.
 
+
+## How to set an ogp image by articles
+
+if you want to set an ogp image by articles, set below parameters as file metadata.
+
+- `ogp_image_url` (URL): set an url path that you want to use as an ogp image.  
+- `twitter_card_large` (bool, default: false): set "true" if you want to ogp image as "summary_large_image".
+
+ex.
+```markdown
+Title: My super title
+Date: 2022-02-05 10:20
+
+ ... snip ....
+
+ogp_image_url: https://example.com/path/to/your_ogp_image.png
+twitter_card_large: true
+```
 
 ## MODIFICATIONS
 

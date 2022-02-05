@@ -11,6 +11,15 @@
   <meta name="og:description" content="{{ article.summary|striptags }}" />
   <meta name="keywords" content="{{ article.tags|join(', ')  }}">
 
+  {% if article.ogp_image_url %}
+  <meta property="og:image" content="{{ article.ogp_image_url }}" />
+  {% elif HSS_DEFAULT_OGP_IMAGE_URL %}
+  <meta property="og:image" content="{{ HSS_DEFAULT_OGP_IMAGE_URL }}" />
+  {% endif %}
+  {% if article.ogp_image_url and article.twitter_card_large %}
+  <meta name="twitter:card" content="summary_large_image" />
+  {% endif %}
+
 {% endblock %}
 
 {% block title %}&ndash; {{ article.title }}{% endblock %}
