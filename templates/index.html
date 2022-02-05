@@ -6,6 +6,10 @@
   <meta name="twitter:title" content="{{ SITENAME }}" />
   {% endif %}
 
+  {% if HSS_DEFAULT_OGP_IMAGE_URL %}
+  <meta property="og:image" content="{{ HSS_DEFAULT_OGP_IMAGE_URL }}" />
+  {% endif %}
+
 {% endblock %}
 
 

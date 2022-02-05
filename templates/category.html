@@ -7,6 +7,10 @@
   <meta name="twitter:title" content="{{ SITENAME }} &ndash; Category" />
   {% endif %}
 
+  {% if HSS_DEFAULT_OGP_IMAGE_URL %}
+  <meta property="og:image" content="{{ HSS_DEFAULT_OGP_IMAGE_URL }}" />
+  {% endif %}
+
 {% if CATEGORY_FEED_ATOM %}
 <link href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(slug=category.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ category }} Category Atom" />
 {% endif %}

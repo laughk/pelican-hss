@@ -8,6 +8,10 @@
   <meta name="twitter:title" content="{{ SITENAME }} &ndash; {{ tag }}" />
   {% endif %}
 
+  {% if HSS_DEFAULT_OGP_IMAGE_URL %}
+  <meta property="og:image" content="{{ HSS_DEFAULT_OGP_IMAGE_URL }}" />
+  {% endif %}
+
 {% if TAG_FEED_ATOM %}
 <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Tag Atom" />
 {% endif %}
