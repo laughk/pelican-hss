@@ -282,6 +282,12 @@ main {
         overflow-x: auto;
         border-style: none;
         border-radius: 4px;
+        code {
+          color: unset;
+          background: unset;
+          padding: unset;
+          border-radius: unset;
+        }
       }
 
       ul {
