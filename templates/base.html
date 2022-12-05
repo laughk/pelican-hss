@@ -107,7 +107,11 @@
             {% endfor %}
             {% for name, link in SOCIAL %}
             <li>
+              {% if name == 'mastodon' %}
+              <a rel="me" href="{{ link }}" target="_blank" title="{{ name }}">
+              {% else %}
               <a href="{{ link }}" target="_blank" title="{{ name }}">
+              {% endif %}
               {% if name == 'twitter' %}
                 <i class="fab fa-twitter-square"></i>
               {% elif name == 'github' %}
@@ -122,6 +126,8 @@
                 <i class="fab fa-instagram"></i>
               {% elif name == 'linkedin' %}
                 <i class="fab fa-linkedin-square"></i>
+              {% elif name == 'mastodon' %}
+                <i class="fa-brands fa-mastodon"></i>
               {% endif %}
               </a>
             </li>
