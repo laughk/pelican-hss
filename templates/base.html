@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Mono">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/fontawesome-all.min.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/hatena-bookmark-icon.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/misskey-icon.css">
   {% if CUSTOM_CSS_URL %}
   <link rel="stylesheet" type="text/css" href="{{ CUSTOM_CSS_URL }}">
   {% endif %}
@@ -107,7 +108,7 @@
             {% endfor %}
             {% for name, link in SOCIAL %}
             <li>
-              {% if name == 'mastodon' %}
+              {% if name == 'mastodon' or name == 'misskey' %}
               <a rel="me" href="{{ link }}" target="_blank" title="{{ name }}">
               {% else %}
               <a href="{{ link }}" target="_blank" title="{{ name }}">
@@ -128,6 +129,8 @@
                 <i class="fab fa-linkedin-square"></i>
               {% elif name == 'mastodon' %}
                 <i class="fa-brands fa-mastodon"></i>
+              {% elif name == 'misskey' %}
+                <i class="fa-misskey"></i>
               {% endif %}
               </a>
             </li>

@@ -1,0 +1,25 @@
+.fa-misskey {
+  display: inline-block;
+  transform: ScaleX(0.8);
+}
+
+.fa-misskey:before {
+  content: 'Mi';
+  font-family: 'Coiny';
+  font-weight: bold;
+  font-style: normal;
+}
+
+.fa-misskey-square:before
+{
+  content: 'Mi';
+  font-family: 'Coiny';
+  font-weight: bold;
+  font-style: normal;
+  vertical-align: 2.5px;
+  padding: 1.0px 1.5px;
+  font-size: 20px;
+  border-radius: 10%;
+  color: #ffffff;
+  background: #000000;
+}
