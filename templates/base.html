@@ -106,7 +106,7 @@
             <li><a href="{{ link }}" title="{{ name }}"><i class="fab fa-link"></i></a></li>
             {% endfor %}
             {% for name, link in SOCIAL %}
-            <li>
+            <li {% if name == 'misskey' %}style="display:inline-block; width: 36px; margin-left: -5px;"{% endif %}>
               {% if name == 'mastodon' or name == 'misskey' %}
               <a rel="me" href="{{ link }}" target="_blank" title="{{ name }}">
               {% else %}
