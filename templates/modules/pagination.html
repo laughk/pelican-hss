@@ -22,7 +22,7 @@
           <li>
             <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}.html">{{ num }}</a>
           </li>
-          {% elif (num - articles_page.number)|abs <= 3 or num == articles_paginator.num_pages %}
+          {% elif (num - articles_page.number)|abs <= 3 or ((num - articles_page.number)|abs + 1) % 5 == 0 or (num - articles_paginator.num_pages)|abs <= 2 %}
           <li>
             <a {{ class_str }} href="{{ SITEURL }}/{{ page_name }}{{ num }}.html">{{ num }}</a>
           </li>
