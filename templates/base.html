@@ -107,13 +107,15 @@
             {% endfor %}
             {% for name, link in SOCIAL %}
             <li {% if name == 'misskey' %}style="display:inline-block; width: 36px; margin-left: -5px;"{% endif %}>
-              {% if name == 'mastodon' or name == 'misskey' %}
+              {% if name == 'mastodon' or name == 'misskey' or name == 'threads' %}
               <a rel="me" href="{{ link }}" target="_blank" title="{{ name }}">
               {% else %}
               <a href="{{ link }}" target="_blank" title="{{ name }}">
               {% endif %}
               {% if name == 'twitter' %}
                 <i class="fab fa-twitter-square"></i>
+              {% elif name == 'x_twitter' %}
+                <i class="fab fa-square-x-twitter"></i>
               {% elif name == 'github' %}
                 <i class="fab fa-github-square"></i>
               {% elif name == 'facebook' %}
@@ -130,6 +132,8 @@
                 <i class="fa-brands fa-mastodon"></i>
               {% elif name == 'misskey' %}
                 <i class="fa-misskey"></i>
+              {% elif name == 'threads' %}
+                <i class="fab fa-threads"></i>
               {% endif %}
               </a>
             </li>
