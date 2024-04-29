@@ -267,11 +267,12 @@ main {
       }
 
       code {
-        padding: 0.2em 0.5em;
+        padding: 0.2em;
         color: $dark-red;
         font-family: $mono;
         background: $light-grey;
         border-radius: 3px;
+        font-size: 0.9em;
       }
 
       pre {
