@@ -44,7 +44,7 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
     - `facebook`: [facebook share link](https://developers.facebook.com/docs/sharing/web)
     - `pocket`: [pocket button](https://getpocket.com/publisher/button)
     - `hatebu`: [hatena bookmark](http://b.hatena.ne.jp/guide/bbutton)
-    - `bsky`: [Bluesky Social(bsky.app)][https://bsky.app/]
+    - `bsky`: [Bluesky Social(bsky.app)](https://bsky.app/)
 
   ex.
   ```python
