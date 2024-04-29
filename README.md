@@ -44,12 +44,13 @@ Clone the [repository](https://github.com/laughk/pelican-hss), edit your `pelica
     - `facebook`: [facebook share link](https://developers.facebook.com/docs/sharing/web)
     - `pocket`: [pocket button](https://getpocket.com/publisher/button)
     - `hatebu`: [hatena bookmark](http://b.hatena.ne.jp/guide/bbutton)
+    - `bsky`: [Bluesky Social(bsky.app)][https://bsky.app/]
 
   ex.
   ```python
   SHOW_SOCIAL_SHARE_BUTTON = True
   SOCIAL_SHARE_BUTTONS = (
-      'twitter', 'x_twitter', 'facebook', 'hatebu', 'pocket',
+      'twitter', 'x_twitter', 'facebook', 'hatebu', 'pocket', 'bsky',
   )
   ```
 - `CUSTOM_CSS_URL` (Default: `None`)
