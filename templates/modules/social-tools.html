@@ -31,6 +31,16 @@
         <i class="fab fa-facebook"></i>
       </a>
       {# Facebook Like Button END #}
+
+      {# bluesky (bsky.app) Button #}
+      {% elif social_service == 'bluesky' or social_service == 'bsky' %}
+      <a class="bluesky-share-button"
+         href="https://bsky.app/intent/compose?text={{ SITENAME }} - {{ article.title }}%0A{{ SITEURL }}/{{ article.url }}"
+         onClick="window.open(encodeURI(decodeURI(this.href)), 'bsky-share', 'width=650, height=470'); return false;" >
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
+      {# bluesky (bsky.app) Button END #}
+
       {# Tweet Button #}
       {% elif social_service == 'twitter' %}
       <a class="tweet-blogpost-button"
@@ -39,7 +49,7 @@
         <i class="fab fa-twitter"></i>
       </a>
       {# Tweet Button END #}
-
+      
       {% elif social_service == 'x_twitter' %}
       <a class="tweet-blogpost-button"
          href="https://x.com/share?url={{ SITEURL }}/{{ article.url }}&text={{ SITENAME }} - {{ article.title }}"
