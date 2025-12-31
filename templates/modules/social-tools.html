@@ -57,17 +57,7 @@
         <i class="fab fa-x-twitter"></i>
       </a>
       {# X Post Button END #}
-
-      {# Pocket Button #}
-      {% elif social_service == 'pocket' %}
-      <a class="pocket-add-button"
-         href="https://getpocket.com/edit?url={{ SITEURL }}/{{ article.url }}&title={{ article.title }}"
-         onclick="window.open(this.href, 'add-to-get-pocket', 'width=490,height=530');return false;"
-         title="add to pocket" >
-        <i class="fab fa-get-pocket"></i>
-      </a>
       {% endif %}
-      {# Pocket Button END #}
     {% endfor %}
     </div>
     {% endif %}
