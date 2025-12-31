@@ -106,7 +106,7 @@
             <li><a href="{{ link }}" title="{{ name }}"><i class="fab fa-link"></i></a></li>
             {% endfor %}
             {% for name, link in SOCIAL %}
-            <li {% if name == 'misskey' %}style="display:inline-block; width: 36px; margin-left: -5px;"{% endif %}>
+            <li {% if name == 'misskey' %}style="display:inline-block; width: 36px; margin-left: -5px; margin-right: 6px;"{% endif %}>
               {% if name == 'mastodon' or name == 'misskey' or name == 'threads' %}
               <a rel="me" href="{{ link }}" target="_blank" title="{{ name }}">
               {% else %}
@@ -133,9 +133,9 @@
               {% elif name == 'misskey' %}
                 <i class="fa-misskey"></i>
               {% elif name == 'threads' %}
-                <i class="fab fa-threads"></i>
+                <i class="fa-brands fa-square-threads"></i>
               {% elif name == 'bsky' or name == 'bluesky' %}
-                <i class="fab fa-bluesky"></i>
+                <i class="fa-brands fa-square-bluesky"></i>
               {% endif %}
               </a>
             </li>
