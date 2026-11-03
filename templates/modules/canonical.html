@@ -1,0 +1,20 @@
+{% if article is defined %}
+  {% set canonical_override = article.canonical_url %}
+  {% set canonical_path = article.url %}
+{% elif page is defined %}
+  {% set canonical_override = page.canonical_url %}
+  {% set canonical_path = page.url %}
+{% elif articles_page is defined %}
+  {% set canonical_path = articles_page.url %}
+{% elif category is defined %}
+  {% set canonical_path = category.url %}
+{% elif tag is defined %}
+  {% set canonical_path = tag.url %}
+{% elif author is defined %}
+  {% set canonical_path = author.url %}
+{% endif %}
+{% if canonical_override %}
+  <link rel="canonical" href="{{ canonical_override|e }}" />
+{% elif SITEURL and (canonical_path is defined or output_file is defined) %}
+  <link rel="canonical" href="{{ (SITEURL.rstrip('/') ~ '/' ~ (canonical_path|default(output_file)).lstrip('/'))|e }}" />
+{% endif %}
