@@ -107,6 +107,35 @@ ogp_image_url: https://example.com/path/to/your_ogp_image.png
 twitter_card_large: true
 ```
 
+## Canonical URLs
+
+All theme pages automatically output a `<link rel="canonical">` using `SITEURL`
+and the page's URL. This includes the home page, category, tag and author pages,
+archives, and category, tag and author indexes. Paginated lists use each page's
+own URL, including custom `PAGINATION_PATTERNS`. Direct template pages respect
+`INDEX_URL`, `ARCHIVES_URL`, `CATEGORIES_URL`, `TAGS_URL` and `AUTHORS_URL` when set;
+other templates extending `base.html` fall back to their output filename.
+For publishing, set `SITEURL` to your site's
+absolute URL and `RELATIVE_URLS = False`. No automatic canonical link is emitted
+when `SITEURL` is empty.
+
+To point an article or page to a different canonical URL, set `canonical_url` in
+its metadata to an absolute URL:
+
+```markdown
+Title: My super title
+Date: 2026-11-03 10:20
+canonical_url: https://example.com/original-article.html
+```
+
+This metadata takes precedence over the automatically generated URL, including
+when `SITEURL` is empty. Remove any canonical links added through a template
+override or `CUSTOM_HEADER_HTML` when switching to the theme's built-in support
+to avoid duplicate links.
+
+Template regression checks require Jinja2 (included with Pelican) and can be run
+with `python -m unittest discover -s tests -v`.
+
 ## MODIFICATIONS
 
 - A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
